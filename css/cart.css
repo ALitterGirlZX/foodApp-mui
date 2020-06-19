@@ -1,0 +1,180 @@
+.shoplist,.confirebtn{
+	margin: 0 auto;
+}
+.shoplist{
+	width: 90%;
+	height: auto;
+}
+.confirebtn{
+	width: 100%;
+	background: #FFFFFF;
+	margin-top: 118px;
+	height: ;
+}
+.confirebtn img{
+	width: 90%;
+	margin-top: 6px;
+}
+.shoplist img{
+	width: 100%;
+	height: 400px;
+	margin-top: 30px;
+}
+#box1{
+	background: #f3f3f3;
+}
+.shoplist1{
+	width: 90%;
+	height: 412px;
+	margin: 20px auto;
+}
+.shoplist1 button{
+	width: 160px;
+	height: 60px;
+	float: left;
+	margin-top: 20px;
+	font-size: 20px;
+	border-radius: 30px;
+}
+.shoplist1 button:first-child{
+	margin-right:15px;
+}
+.shoplist1 button img{
+	float: left;
+}
+.shoplist1 button span{
+	display: block;
+	float: left;
+	line-height: 40px;
+	margin-left: 5px;
+}
+.active{
+	border: 1px solid #f08c07;
+}
+.shoplist1 input{
+	display: block;
+	margin-top: 20px;
+	height: 55px;
+	border: 1px solid #EEEEEE;
+	box-shadow: 0px 2px 2px #CCCCCC;
+	color: #CCCCCC;
+	font-size: 14px;
+}
+.mui-plus.mui-android header.mui-bar{
+	display: none;
+}
+.mui-plus.mui-android .mui-bar-nav~.mui-content{
+	padding: 0;
+}
+#slider{
+	margin-top: 22px;
+	border-bottom: 1px solid #CCCCCC;
+	/* box-shadow: 0px 2px 2px #CCCCCC; */
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background: #F08C07!important;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #F08C07!important;
+    background: 0 0;
+}
+.mui-slider-group{
+	width: 100%;
+	height: 500px!important;
+}
+.mui-slider-indicator.mui-segmented-control {
+    background: #ffffff;
+}
+.group-box{
+	width: 100%;
+	height: 250px;
+	background: #FFFFFF;
+}
+.group-box img{
+	width: 100%;
+	margin-top: 10px;
+}
+.info{
+	height: 220px;
+}
+.confirebtn1{
+	width: 100%;
+	background: #FFFFFF;
+}
+.confirebtn1 img{
+	width: 90%;
+	margin-top: 6px;
+}
+.info{
+	margin-top: 20px;
+	border: 0px;
+}
+.info img{
+	width: 100%;
+	height: 100%;
+}
+.shoplist2 img{
+	width: 100%;
+	margin-top: 20px;
+}
+.confirebtn3{
+	width: 100%;
+	background: #FFFFFF;
+	margin-top: 20px;
+}
+.confirebtn3 img{
+	width: 90%;
+	margin-top: 6px;
+}
+.shoplist3 ul{
+	width: 95%;
+	margin: 35px auto!important;
+}
+.shoplist3 li{
+	width: 110%!important;
+	margin-left: -35px;
+	height: 90px!important;
+}
+.litop,.libottom{
+	width: 100%;
+	height: 50%;
+}
+.litop{
+	border-bottom: 1px solid #f9f8f8;
+}
+.litop img{
+	width: 35px!important;
+	height: 35px!important;
+}
+.shoplist3 span,.shoplist3 img{
+	float: left;
+}
+.shoplist3 button{
+	width: 75px;
+	height: 24px;
+	line-height: 12px;
+	font-size: 11px!important;
+	border-radius: 10px;
+	border: 1px solid #555555;
+	float: right;
+	margin: 10px 10px 0px 0px;
+}
+.libottom{
+	font-size: 14px;
+	line-height: 44px;
+	color: #6f6f6f;
+}
+.libottom span:first-child{
+	margin: 0px 20px 0px 10px;
+}
+.litop span{
+	line-height: 44px;
+	font-size: 16px;
+	color: #3f3f3f;
+	margin-left: 5px;
+}
+.litop img:last-child{
+	width: 80px!important;
+	height: 15px!important;
+	margin-top: 15px!important;
+}

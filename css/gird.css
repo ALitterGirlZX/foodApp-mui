@@ -1,0 +1,157 @@
+ .mui-off-canvas-wrap{  
+    max-width: 720px;  
+    margin: 0 auto;  
+}
+#header{
+	background:#f08c07;
+	height: 4rem;
+}
+#header a{
+	margin-top: -0.5rem;
+}
+#header a,.mui-title{
+	color: #FFFFFF;
+	line-height: 4rem;
+}
+#box{
+	 /*height:800px;*/
+	 text-align: center; 
+}
+#box ul{
+	height:30rem;
+	margin: 3.5rem auto;
+}
+#box ul img{
+	margin-top: 0.2rem;
+}  
+#box li{
+	list-style: none;
+	border: 1px solid #f08c07;
+	border-radius: 20px;
+	background: #FFFFFF;
+	margin-right: 1.5rem;
+	margin-bottom:2rem;
+	float: left;
+	width: 142px;
+	height: 120px;
+}
+#footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 1rem;
+  color: #ccc;
+}
+#top li{
+	list-style: none;
+	line-height: 50px;
+	margin-bottom: 1rem;
+}
+#top{
+	margin-top: 2rem;
+}
+#top hr{
+	width: 100%;
+	margin-left: -20px;
+	color: #f08c07;
+	margin-bottom:2.5rem;
+}
+#top a{
+	color: #555555;
+}
+#top a:hover{
+	color: #f08c07;
+}
+#top img{
+	width: 60px;
+	height: 60px;	
+	margin-top: 0.5rem;
+}
+/*list*/
+#box1{
+	 /*height:800px;*/
+	 text-align: center; 
+}
+#box1 ul{
+	height:30rem;
+	margin: 3rem auto;
+}
+#box1 ul img{
+	width: 80px;
+	height: 60px;
+	float: left;
+	margin-left: 0.6rem;
+	margin-top: 0.4rem;
+}  
+#box1 li{
+	list-style: none;
+	border: 1px solid #eaeaea;
+	border-radius: 15px;
+	background: #FFFFFF;
+	margin-bottom:1rem;
+	float: left;
+	width: 90%;
+	height: 75px;
+}
+.mainbox{
+	width: 200px;
+	height: 80px;
+}
+.iconlist,.iconlist1{
+	width: 5rem;
+	height: 5rem;
+	border:1px solid #eee;
+	border-radius: 3.125rem;
+	text-align: center;
+	line-height: 5rem;
+	float: left;
+	box-shadow: 0px 2px 5px #CCCCCC;
+}
+.setlist{
+	width: 5rem;
+	height: 5rem;
+	float: left;
+	line-height: 80px;
+	margin-left: 10%;
+}
+.iconlist1{
+	/* border:0px; */
+	overflow: hidden;
+	width: 88px!important;
+	height: 88px!important;
+	text-align: center;
+	box-shadow: 5px 5px 15px #ccc!important;
+}
+.iconlist1 img{
+	width: 80px!important;
+	height: 80px!important;
+	border-radius: 3.125rem;
+	margin: 4px auto!important;
+}
+.in1{
+	width: 100px;
+	float: left;
+	margin-left: 8px;
+}
+.in1 p{
+	height: 10px;
+	color: #B6B6B6;
+	text-align: left;
+}
+.in1 p:nth-child(1){
+	color: #555555!important;
+	margin-top: 18px;
+	font-size: 16px!important;
+}
+.comment{
+	width: 80px!important;
+	height: 12px!important;
+	position: relative;
+	bottom: 5px;
+}
+#header img{
+	width:40px;
+	height: 35px;
+	float: right;
+	margin-top: 18px;
+}

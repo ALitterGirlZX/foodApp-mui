@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="js/mui.min.js"></script>
+<link href="css/mui.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/gird.css" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+<body>
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+	<!-- 菜单容器 -->
+	<aside class="mui-off-canvas-left" style="background: #FFFFFF;">
+		<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!-- 菜单具体展示内容 -->
+				<div id="top">
+					<ul class="menu">
+						<li id="caidan">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon1.png" alt=""></div>
+								<div class="setlist"><a href="list.html">菜单</a></div>
+							</div>
+						</li>
+						<li id="dingdan">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon5.png" alt=""></div>
+								<div class="setlist"><a href="list.html">我的订单</a></div>
+							</div>
+						</li>
+						<li id="gongying">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon2.png" alt=""></div>
+								<div class="setlist"><a href="list.html">供应</a></div>
+							</div>
+						</li>
+						<li id="kefu">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon3.png" alt=""></div>
+								<div class="setlist"><a href="list.html">客服中心</a></div>
+							</div>
+						</li>
+						<li id="shezhi">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon4.png" alt=""></div>
+								<div class="setlist"><a href="list.html">设置</a></div>
+							</div>
+						</li>
+						<hr />
+						<li id="geren">
+							<div class="mainbox">
+								<div class="iconlist1"><img src="img/toux.jpg" alt=""></div>
+								<div class="setlist"><a href="list.html">个人中心</a></div>
+							</div>
+						</li>
+					</ul>
+			  </div>  
+			</div>
+		</div>
+	</aside>
+	<!-- 主页面容器 -->
+	<div class="mui-inner-wrap">
+		<!-- 主页面标题 -->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a id="reback" class="mui-icon mui-icon mui-icon-arrowleft"></a> 
+			<h1 class="mui-title">我的订单</h1>
+		</header>
+		<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper" style="background: #F3F3F3;">
+			<div class="mui-scroll">
+				<!-- 主界面具体展示内容 -->
+				<div id="box1" class="container">
+					<div class="shoplist3">
+						<ul>
+							<li>
+								<div class="litop">
+									<img src="img/greybag.jpg" >
+									<span>订单号 - 17061585 </span><span style="color: #ed8600;"> (已支付)</span>
+									<button id="confirmBtn" type="button" class="mui-btn mui-btn-outlined">取消</button>
+								</div>
+								<div class="libottom">
+									<span>订单金额 - 19.75$</span>
+									<span>16:47 4/24/2020</span>
+									<button type="button">重新下单</button>
+								</div>
+							</li>
+							<li>
+								<div class="litop">
+									<img src="img/greybag.jpg" >
+									<span>订单号 - 11061325 </span><span style="color: #ed8600;"> (派送中)</span>
+									<button id="confirmBtn" type="button" class="mui-btn mui-btn-outlined">取消</button>
+								</div>
+								<div class="libottom">
+									<span>订单金额 - 25.75$</span>
+									<span>163:47 7/24/2019</span>
+									<button type="button">重新下单</button>
+								</div>
+							</li>
+							<li>
+								<div class="litop">
+									<img src="img/greybag.jpg" >
+									<span>订单号 - 12015622 </span><span style="color: #59bd49;"> (已完成)</span>
+									<button type="button" style="color: #FFFFFF;background: #F08C07;border: 0;" class="comBtn">评价</button>
+								</div>
+								<div class="libottom">
+									<span>订单金额 - 8.13$</span>
+									<span>08:22 11/18/2019</span>
+									<button type="button">重新下单</button>
+								</div>
+							</li>
+							<li>
+								<div class="litop">
+									<img src="img/greybag.jpg" >
+									<span>订单号 - 17061585 </span><span style="color: #e92b2b;"> (已取消)</span>
+								</div>
+								<div class="libottom">
+									<span>订单金额 - 19.75$</span>
+									<span>16:47 4/24/2020</span>
+									<button type="button">重新下单</button>
+								</div>
+							</li>
+							<li>
+								<div class="litop">
+									<img src="img/greybag.jpg" >
+									<span>订单号 - 17025462 </span><span style="color: #59bd49;"> (已完成)</span>
+									<img src="./img/comment2.png" >
+								</div>
+								<div class="libottom">
+									<span>订单金额 - 26.75$</span>
+									<span>21:15 3/29/2018</span>
+									<button type="button">重新下单</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8" src="js/gird.js"></script>
+<script type="text/javascript">
+	$("#header").on('tap','a',function(){
+		mui.back();
+	})
+	
+	$(".contruct3").on('tap','img',function(){
+		mui.openWindow({
+			id:'detail',
+			url:"cart.html"
+		});
+	})
+	
+	$(".confirebtn3").on('tap','img',function(){
+		mui.openWindow({
+			id:'detail',
+			url:"last.html"
+		});
+	})
+	
+	var info = $('.litop').find('span').eq(1);
+	$('.litop').on('tap','button',function() {
+	    var btnArray = ['否', '是'];
+	    mui.confirm('确认取消订单？', '提示', btnArray, function(e) {
+	        if (e.index == 1) {
+	            info.html('(已取消)');
+				$('.litop').find('span').eq(1).css('color','#e92b2b');
+				$('.litop').find('button').hide();
+	        }
+	    })
+	})
+	
+</script>
+</html>

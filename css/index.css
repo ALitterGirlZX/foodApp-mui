@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*头部*/
+#top {
+  background: url(../img/bg1.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  height: 22rem;
+  width: 100%;
+  float: left;
+}
+#top img {
+  margin-top:4rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+/*主体*/
+#center {
+  text-align: center;
+  font-size: 1.87rem;
+  width: 100%;
+  height: 50%;
+  float: left;
+}
+#center button {
+  margin-bottom: 1rem;
+  border-radius: 100px;
+  color: #FFFFFF;
+  width: 300px;
+  height: 50px;
+  border: 0rem;
+}
+#center button a {
+  color: #FFFFFF;
+}
+#center button a:hover {
+  font-size: 25px;
+  color: #FFFFFF;
+}
+#center .a {
+  background: forestgreen;
+}
+#center .b {
+  background: steelblue;
+}
+#center .c {
+  background: #f08c07;
+}
+#center a {
+  font-size: 1rem;
+  color: #555;
+  text-decoration: none;
+}
+#center a:hover {
+  color: #f08c07;
+}
+
+/*底部*/
+#footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 30px;
+  color: #ccc;
+}

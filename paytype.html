@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="js/mui.min.js"></script>
+<link href="css/mui.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/gird.css" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+<body>
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+	<!-- 菜单容器 -->
+	<aside class="mui-off-canvas-left" style="background: #FFFFFF;">
+		<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!-- 菜单具体展示内容 -->
+				<div id="top">
+					<ul class="menu">
+						<li id="caidan">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon1.png" alt=""></div>
+								<div class="setlist"><a href="list.html">菜单</a></div>
+							</div>
+						</li>
+						<li id="dingdan">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon5.png" alt=""></div>
+								<div class="setlist"><a href="list.html">我的订单</a></div>
+							</div>
+						</li>
+						<li id="gongying">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon2.png" alt=""></div>
+								<div class="setlist"><a href="list.html">供应</a></div>
+							</div>
+						</li>
+						<li id="kefu">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon3.png" alt=""></div>
+								<div class="setlist"><a href="list.html">客服中心</a></div>
+							</div>
+						</li>
+						<li id="shezhi">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon4.png" alt=""></div>
+								<div class="setlist"><a href="list.html">设置</a></div>
+							</div>
+						</li>
+						<hr />
+						<li id="geren">
+							<div class="mainbox">
+								<div class="iconlist1"><img src="img/toux.jpg" alt=""></div>
+								<div class="setlist"><a href="list.html">个人中心</a></div>
+							</div>
+						</li>
+					</ul>
+			  </div>  
+			</div>
+		</div>
+	</aside>
+	<!-- 主页面容器 -->
+	<div class="mui-inner-wrap">
+		<!-- 主页面标题 -->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a id="reback" class="mui-icon mui-icon mui-icon-arrowleft"></a> 
+			<h1 class="mui-title">支付方式</h1>
+		</header>
+		<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!-- 主界面具体展示内容 -->
+				<div id="box1" class="container">
+				<div class="mui-content">
+					<div id="slider" class="mui-slider">
+						<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+							<a class="mui-control-item" href="#item1mobile">账户余额</a>
+							<a class="mui-control-item" href="#item2mobile">信用卡</a>
+							<a class="mui-control-item" href="#item3mobile">网上银行</a>
+						</div>
+						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active"></div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content"></div>
+							<div id="item3mobile" class="mui-slider-item mui-control-content"></div>
+						</div>
+						<div class="group-box">
+							<img src="img/xincard%20(2).jpg" >
+						</div>
+						<div class="info">
+							<img src="img/input.jpg" alt="">
+						</div>
+					</div>
+					<div class="confirebtn1">
+						<img src="img/continue.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8" src="js/gird.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack: false
+	});
+	(function($) {
+		$('.mui-scroll-wrapper').scroll({
+			indicators: true //是否显示滚动条
+		});
+		var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+		var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+		var item2 = document.getElementById('item2mobile');
+		var item3 = document.getElementById('item3mobile');
+		document.getElementById('slider').addEventListener('slide', function(e) {
+			if (e.detail.slideNumber === 1) {
+				if (item2.querySelector('.mui-loading')) {
+					setTimeout(function() {
+						item2.querySelector('.mui-scroll').innerHTML = html2;
+					}, 500);
+				}
+			} else if (e.detail.slideNumber === 2) {
+				if (item3.querySelector('.mui-loading')) {
+					setTimeout(function() {
+						item3.querySelector('.mui-scroll').innerHTML = html3;
+					}, 500);
+				}
+			}
+		});
+		var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+		$('.mui-input-group').on('change', 'input', function() {
+			if (this.checked) {
+				sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+				//force repaint
+				sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+			}
+		});
+		$("#header").on('tap','a',function(){
+			mui.back();
+		})
+		$(".confirebtn1").on('tap','img',function(){
+			mui.openWindow({
+				id:'detail',
+				url:"confire.html"
+			});
+		})
+	})(mui);
+</script>
+</html>

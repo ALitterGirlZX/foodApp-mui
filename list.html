@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title></title>
+<script src="js/mui.min.js"></script>
+<link href="css/mui.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/gird.css" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/gird.css"/>
+<body>
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+	<!-- 菜单容器 -->
+	<aside class="mui-off-canvas-left" style="background: #FFFFFF;">
+		<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!-- 菜单具体展示内容 -->
+				<div id="top">
+					<ul class="menu">
+						<li id="caidan">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon1.png" alt=""></div>
+								<div class="setlist"><a href="list.html">菜单</a></div>
+							</div>
+						</li>
+						<li id="dingdan">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon5.png" alt=""></div>
+								<div class="setlist"><a href="list.html">我的订单</a></div>
+							</div>
+						</li>
+						<li id="gongying">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon2.png" alt=""></div>
+								<div class="setlist"><a href="list.html">供应</a></div>
+							</div>
+						</li>
+						<li id="kefu">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon3.png" alt=""></div>
+								<div class="setlist"><a href="list.html">客服中心</a></div>
+							</div>
+						</li>
+						<li id="shezhi">
+							<div class="mainbox">
+								<div class="iconlist"><img src="img/icon4.png" alt=""></div>
+								<div class="setlist"><a href="list.html">设置</a></div>
+							</div>
+						</li>
+						<hr />
+						<li id="geren">
+							<div class="mainbox">
+								<div class="iconlist1"><img src="img/toux.jpg" alt=""></div>
+								<div class="setlist"><a href="list.html">个人中心</a></div>
+							</div>
+						</li>
+					</ul>
+			  </div>  
+			</div>
+		</div>
+	</aside>
+	<!-- 主页面容器 -->
+	<div class="mui-inner-wrap">
+		<!-- 主页面标题 -->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a id="left-menu" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+			<h1 class="mui-title">菜单</h1>
+			<img src="./img/bag.png">
+		</header>
+		<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!-- 主界面具体展示内容 -->
+				<div id="box1" class="container">
+					<ul class="girdList">
+						<li id="snackFood">
+							<img src="img/1.png" />
+							<div class="in1">
+								<p>休闲食品</p>
+								<p>价格范围1$-10$</p>
+							</div>
+							<img src="img/comment.png">
+						</li>
+						<li id="chineseFood">
+							<img src="img/2.png" />
+							<div class="in1">
+								<p>中国菜</p>
+								<p>价格范围1$-10$</p>
+							</div>
+							<img src="img/comment.png">
+						</li>
+						<li id="nonvegetarianFood">
+							<img src="img/3.png" />
+							<div class="in1">
+								<p>非素食</p>
+								<p>价格范围1$-10$</p>
+							</div>
+							<img src="img/comment.png" >
+						</li>
+						<li id="pisa">
+							<img src="img/4.png" />
+							<div class="in1">
+								<p>披萨</p>
+								<p>价格范围1$-10$</p>
+							</div>
+							<img src="img/comment.png" >
+						</li>
+						<li id="drink">
+							<img src="img/5.jpg" />
+							<div class="in1">
+								<p>饮料</p>
+								<p>价格范围1$-10$</p>
+							</div>
+							<img src="img/comment.png" >
+						</li>
+						<li id="Doughnuts">
+							<img src="img/6.jpg" />
+							<div class="in1">
+								<p>甜甜圈</p>
+								<p>价格范围1$-10$</p>
+							</div>
+							<img src="img/comment.png" >
+						</li>
+					</ul>
+				</div>
+				<div id="footer">
+					<span>神盾局S级特工曾女士出品</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" charset="utf-8" src="js/gird.js"></script>
+</html>
